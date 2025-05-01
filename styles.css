@@ -1,0 +1,107 @@
+body {
+    background-image: url(http://www.myconfinedspace.com/wp-content/uploads/2018/12/Falling-Astronaut.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+   }
+  
+  section {
+    width: 75%;
+    margin: auto;
+  }
+  
+  .announcement {
+    margin: auto;
+    width: 80%;
+  }
+  
+  h1, p {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: rockwell, consolas;
+    margin-top: 3rem;
+  }
+  
+  .announcement p {
+    font-family: papyrus, consolas;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    font-style: italic;
+    margin-top: 22px;
+    margin-bottom: 70px;
+  }
+  
+  .form {
+    width: 80%;
+    max-width: 800px;
+    min-width: 600px;
+    background-color: rgb(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 1px 5px;
+  }
+  
+  .form div {
+    margin-bottom: 3rem;
+  }
+  
+  .form {
+    font-family: Calibri, monospace;
+  }
+  
+  /* User information section */
+  
+  .info {
+    margin-top: 2.5rem;
+  }
+  
+  .info div {
+    display: inline-block;
+    width: 45%;
+    max-width: 45%;
+    padding-bottom: 45px;
+    border-bottom: 1px solid black;
+  }
+  
+  .info p {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .info input {
+    width: 90%;
+    margin-left: 13px;
+  }
+  
+  /* User information section stop */
+  
+  fieldset {
+    width: 90%;
+  }
+  
+  legend {
+  text-align: center;
+  }
+  
+  /* Dropdown menu start */
+  .reach {
+    border-bottom: 1px solid black;
+  }
+  .reach select {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+  }
+  
+  /* Dropdown menu stop */
+  
+  input[type="submit"] {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+    height: 30px;
+  }

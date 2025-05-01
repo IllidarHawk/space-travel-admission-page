@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Artemis II space program recruitment</title>
+  </head>
+
+  
+  <body>
+
+      <div class="announcement">
+      <h1 id="title">ARTEMIS II: Humanity's Next Step</h1>
+      <p id="description">Be part of the the team that changes the status quo of our presence's boundaries</p>
+      <p class="subtitle"><strong> Next stop: Moon </strong></p>
+    </div>
+
+
+    <div class="form">
+      <form id="survey-form" action="/applicants.php" method="post">
+
+<!-- Two-column section - Personal info-->
+        <section class="info">
+
+          <!-- Left column-->
+          <div class="personal-info">
+              <label id="name-label" for="name">
+              <p>What's your (full) name?</p>
+              <input id="name" type="text" placeholder="i.e Diana M. Haggings" required>
+              </label>
+              <label id="number-label" for="number">
+              <p>What's your age?</p>
+              <input id="number" type="number" min="24" max="55" pattern="[0-9]{2,2}" placeholder="Based on year" required>
+              </label>
+              <label for="city">
+              <p>City of residence:</p>
+              <input id="city" type="text" placeholder="Country, (State), City" required> 
+              </label>
+          </div>
+          <!-- Right column-->
+          <div class="personal-info">
+              <label id="email-label" for="email">
+              <p>E-mail address:</p>
+              <input id="email" type="email" placeholder="Please, check your spam" required>
+              </label>
+              <label for="username">
+              <p>Username:</p>
+              <input id="username" type="text" required> 
+              </label>
+              <label for="password">
+              <p>Password:</p>
+              <input id="password" type="password" pattern"[A-Za-z0-9]{8,}" placeholder="No special characters valid" required>
+              </label>
+          </div>
+        </section>
+
+        <section class="role-skill">
+<!-- The second section of the form is divided in two divs, one about the applicant's role to the program and one abouts its skillset--> 
+          <div>
+
+<!-- This is the start of the first div, about the role of the applicant-->
+            <fieldset>
+              <legend>Which of the roles below do you wish to, and know you can, take in the project?</legend>
+              <article><input type="radio" name="role" value="Control-coordination" checked> Space journey control & coordination team
+              </article>
+              <article><input type="radio" name="role" value="engineer"> Engineering team
+              </article>
+              <article><input type="radio" name="role" value="designer"> Mission & equipment design team
+              </article>
+              <article> 
+              <input type="radio" name="role" value="astronaut"> Astronaut
+              </article>
+            </fieldset>
+          </div>
+
+<!-- This is the start of the second div, about the applicant's skills-->
+          <div>
+            <fieldset>
+              <legend>Give us a glimpse of your skillset! (Check all that apply)</legend>
+              <article>
+              <input type="checkbox" value="engineer" > Deep engineering knowledge
+              </article>
+              <article>
+              <input type="checkbox" value="calm"> Patient and effective in too stressful conditions
+              </article>
+              <article>
+              <input type="checkbox" value="programmer"> Deep programming knowledge
+              </article>
+              <article>
+              <input type="checkbox" value="no-nausea"> Not prone to dizziness and nausea
+              </article>
+            </fieldset>
+          </div>
+        </section>
+
+<!-- This third section is for the dropdown menu, the source that the applicant found out about the program--> 
+        <section>
+          <div class="reach">
+              <p>How did you learn about the program?</p>
+              <select id="dropdown">
+                <option value=""> Select an answer </option>
+                <option value="space-agency"> NASA/ ESA/ SpaceX Newsfeed</option>
+                <option value="forum"> Some forum for space lovers</option>
+                <option value="friend"> From a friend</option>
+                <option value="other"> Other</option>
+              </select>
+          </div>
+        </section>
+        
+<!-- The last section is one div, about the CV and the applicants comments-->
+
+        <section>
+          <p>Last but not least, embed your CV and add anything more about you, if there is!</p>
+
+          <div>
+            <fieldset>
+              <legend>Upload your CV here</legend>
+              <input type="file" required>
+            </fieldset>
+          </div>
+          <div>
+            <fieldset>
+              <legend>Let us know more about your character and passions!</legend>
+              <textarea rows="3" cols="45" placeholder="I love playing strategy video games!"></textarea>
+            </fieldset>
+          </div>
+        </section>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
