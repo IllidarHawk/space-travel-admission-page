@@ -12,7 +12,7 @@
   
   <body>
 
-      <div class="announcement">
+    <div class="header">
       <h1 id="title">ARTEMIS II: Humanity's Next Step</h1>
       <p id="description">Be part of the the team that changes the status quo of our presence's boundaries</p>
       <p class="subtitle"><strong> Next stop: Moon </strong></p>
@@ -28,11 +28,11 @@
           <!-- Left column-->
           <div class="personal-info">
               <label id="name-label" for="name">
-              <p>What's your (full) name?</p>
+              <p>Full name:</p>
               <input id="name" type="text" placeholder="i.e Diana M. Haggings" required>
               </label>
               <label id="number-label" for="number">
-              <p>What's your age?</p>
+              <p>Age:</p>
               <input id="number" type="number" min="24" max="55" pattern="[0-9]{2,2}" placeholder="Based on year" required>
               </label>
               <label for="city">
@@ -64,11 +64,14 @@
 <!-- This is the start of the first div, about the role of the applicant-->
             <fieldset>
               <legend>Which of the roles below do you wish to, and know you can, take in the project?</legend>
-              <article><input type="radio" name="role" value="Control-coordination" checked> Space journey control & coordination team
+              <article>
+                <input type="radio" name="role" value="Control-coordination" checked> Space journey control & coordination team
               </article>
-              <article><input type="radio" name="role" value="engineer"> Engineering team
+              <article>
+                <input type="radio" name="role" value="engineer"> Engineering team
               </article>
-              <article><input type="radio" name="role" value="designer"> Mission & equipment design team
+              <article>
+                <input type="radio" name="role" value="designer"> Mission & equipment design team
               </article>
               <article> 
               <input type="radio" name="role" value="astronaut"> Astronaut
@@ -81,16 +84,16 @@
             <fieldset>
               <legend>Give us a glimpse of your skillset! (Check all that apply)</legend>
               <article>
-              <input type="checkbox" value="engineer" > Deep engineering knowledge
+                <input type="checkbox" value="engineer" > Deep engineering knowledge
               </article>
               <article>
-              <input type="checkbox" value="calm"> Patient and effective in too stressful conditions
+                <input type="checkbox" value="calm"> Patient and effective in too stressful conditions
               </article>
               <article>
-              <input type="checkbox" value="programmer"> Deep programming knowledge
+                <input type="checkbox" value="programmer"> Deep programming knowledge
               </article>
               <article>
-              <input type="checkbox" value="no-nausea"> Not prone to dizziness and nausea
+                <input type="checkbox" value="no-nausea"> Not prone to dizziness and nausea
               </article>
             </fieldset>
           </div>
@@ -116,15 +119,15 @@
           <p>Last but not least, embed your CV and add anything more about you, if there is!</p>
 
           <div>
-            <fieldset>
-              <legend>Upload your CV here</legend>
+            <fieldset class="file-input">
+              <legend>Upload your CV</legend>
               <input type="file" required>
             </fieldset>
           </div>
           <div>
             <fieldset>
-              <legend>Let us know more about your character and passions!</legend>
-              <textarea rows="3" cols="45" placeholder="I love playing strategy video games!"></textarea>
+              <legend>Let us know more about your character and passions</legend>
+              <textarea rows="3" cols="62" placeholder="I love ..."></textarea>
             </fieldset>
           </div>
         </section>
