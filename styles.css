@@ -1,3 +1,7 @@
+:root {
+  --lightgrey: rgb(226, 225, 225);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -49,14 +53,23 @@ body {
     padding: 1px 5px;
   }
   
-  .form div {
-    margin-bottom: 3rem;
-  }
-  
   .form {
     font-family: Calibri, monospace;
   }
   
+  .divider {
+    margin-inline: auto;
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, rgb(70, 70, 70), white, rgb(70, 70, 70));
+    margin-block: 90px;
+  }
+
+  section fieldset:first-of-type {
+    margin-bottom: 50px;
+  }
+
+
   /* User information section */
   
   .info {
@@ -81,7 +94,7 @@ body {
     padding: 4px;
     border: 0;
     border-radius: 1px;
-    background-color: rgb(226, 225, 225);
+    background-color: var(--lightgrey);
   }
  
   /* About the placeholders */ 
@@ -103,19 +116,28 @@ body {
     font-style: italic;
   }
 
-  /* User information section stop */
+  /* Questions section */
   
   fieldset {
     padding-block: 15px;
     width: 90%;
     margin-inline: auto;
-    border: 2px solid rgb(226, 225, 225); 
+    border: 2px solid var(--lightgrey); 
   }
   
   legend {
     text-align: center;
     padding-inline: 10px;
   }
+
+  article {
+    margin-bottom: 4px;
+  }
+  
+  input[type="checkbox"], input[type="radio"]  {
+    vertical-align: top;
+  }
+
   
   /* Dropdown menu start */
 
@@ -125,7 +147,7 @@ body {
     margin-bottom: 35px;
   }
   
-  /* Dropdown menu stop */
+  /* Submit */
   
   input[type="submit"] {
     display: block;
