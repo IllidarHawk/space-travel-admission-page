@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<hmtl lang="en">
-
-
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +7,6 @@
     <title>Artemis II space program recruitment</title>
   </head>
 
-  
   <body>
 
     <div class="header">
@@ -17,7 +14,6 @@
       <p id="description">Be part of the the team that changes the status quo of our presence's boundaries</p>
       <p class="subtitle"><strong> Next stop: Moon </strong></p>
     </div>
-
 
     <div class="form">
       <form id="survey-form" action="/applicants.php" method="post">
@@ -57,12 +53,13 @@
           </div>
         </section>
 
-        <section class="role-skill">
-<!-- The second section of the form is divided in two divs, one about the applicant's role to the program and one abouts its skillset--> 
+        <div class="divider"></div>
+
+        <section class="role-skill"> 
           <div>
 
-<!-- This is the start of the first div, about the role of the applicant-->
-            <fieldset>
+<!-- About the role of the applicant-->
+            <fieldset  class="first-of-section">
               <legend>Which of the roles below do you wish to, and know you can, take in the project?</legend>
               <article>
                 <input type="radio" name="role" value="Control-coordination" checked> Space journey control & coordination team
@@ -79,7 +76,7 @@
             </fieldset>
           </div>
 
-<!-- This is the start of the second div, about the applicant's skills-->
+<!-- About the applicant's skills-->
           <div>
             <fieldset>
               <legend>Give us a glimpse of your skillset! (Check all that apply)</legend>
@@ -99,7 +96,9 @@
           </div>
         </section>
 
-<!-- This third section is for the dropdown menu, the source that the applicant found out about the program--> 
+        <div class="divider"></div>
+
+<!-- The source that the applicant found out about the program--> 
         <section>
           <div class="reach">
               <p>How did you learn about the program?</p>
@@ -113,7 +112,7 @@
           </div>
         </section>
         
-<!-- The last section is one div, about the CV and the applicants comments-->
+<!-- CV and comments-->
 
         <section>
           <p>Last but not least, embed your CV and add anything more about you, if there is!</p>
