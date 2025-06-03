@@ -62,7 +62,7 @@ body {
     width: 80%;
     height: 2px;
     background: linear-gradient(to right, rgb(70, 70, 70), white, rgb(70, 70, 70));
-    margin-block: 90px;
+    margin-block: 90px ;
   }
 
   section fieldset:first-of-type {
