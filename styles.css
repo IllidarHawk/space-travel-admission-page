@@ -7,116 +7,135 @@
 }
 
 body {
-    background-image: url(http://www.myconfinedspace.com/wp-content/uploads/2018/12/Falling-Astronaut.jpg);
-    background-position: center;
-    background-size: cover;
-    color: white;
-   }
-  
-  section {
-    width: 75%;
-    margin: auto;
-  }
-  
-  .header {
-    margin: auto;
-    width: 80%;
-  }
-  
-  h1, p {
-    text-align: center;
-  }
-  
-  h1 {
-    font-family: rockwell, consolas;
-    margin-top: 3rem;
-  }
-  
-  .header p {
-    font-family: papyrus, consolas;
-    text-shadow: 0px 0px 4px black;
-  }
-  
-  .subtitle {
-    font-size: 24px;
-    font-style: italic;
-    margin-top: 22px;
-    margin-bottom: 70px;
-  }
-  
-  .form {
-    width: 80%;
-    max-width: 800px;
-    min-width: 600px;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-inline: auto;
-    padding: 1px 5px;
-  }
-  
-  .form {
-    font-family: Calibri, monospace;
-  }
-  
-  .divider {
-    margin-inline: auto;
-    width: 80%;
-    height: 2px;
-    background: linear-gradient(to right, rgb(70, 70, 70), white, rgb(70, 70, 70));
-    margin-block: 90px ;
-  }
+  background-image: url(http://www.myconfinedspace.com/wp-content/uploads/2018/12/Falling-Astronaut.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
 
-  section fieldset:first-of-type {
-    margin-bottom: 50px;
-  }
+/*---------------------------------------*/  
+/*------------ TITLE SECTION ------------*/
+/*---------------------------------------*/
+
+.header {
+  margin: auto;
+  width: 80%;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  font-family: rockwell, consolas;
+  margin-top: 3rem;
+}
+
+.header p {
+  font-family: papyrus, consolas;
+  text-shadow: 0px 0px 4px black;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 22px;
+  margin-bottom: 70px;
+}
 
 
-  /* User information section */
+/*---------------------------------------*/  
+/*--------- GENERAL FORM SECTION --------*/
+/*---------------------------------------*/
+
+
+.form {
+  min-width: 550px;
+  width: 80%;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-inline: auto;
+  padding: 1px 5px;
+  font-family: Calibri, monospace;
+}
+
+
+.divider {
+  margin-inline: auto;
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(to right, rgb(70, 70, 70), white, rgb(70, 70, 70));
+  margin-block: 90px ;
+}
+
+
+section {
+  width: 75%;
+  margin: auto;
+}
+
+section fieldset:first-of-type {
+  margin-bottom: 50px;
+}
+
+
+section:last-of-type > div {
+  margin-top: 40px;
+}
+
+/*---------------------------------------*/  
+/*---------- USER INFO SECTION ----------*/
+/*---------------------------------------*/
   
-  .info {
-    margin-top: 2.5rem;
-  }
-  
-  .info {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    margin-bottom: 45px;
-    }
-  
-  .personal-info p {
-    text-align: center;
-    margin-bottom: 8px;
-  }
-  
-  .personal-info input,
-  select {
-    width: 210px;
-    padding: 4px;
-    border: 0;
-    border-radius: 1px;
-    background-color: var(--lightgrey);
-  }
- 
-  /* About the placeholders */ 
-  .personal-info input::-webkit-input-placeholder {
-    font-size: 12px;
-    color: black;
-    font-style: italic;
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+  margin-bottom: 45px;
+  width: 90%;
+  text-align: center;
   }
 
-  .personal-info input::-webkit-input-placeholder {
-    font-size: 12px;
-    color: black;
-    font-style: italic;
-  }
+.personal-info p {
+  margin-bottom: 8px;
+}
 
-  .personal-info input::-ms-input-placeholder {
-    font-size: 12px;
-    color: black;
-    font-style: italic;
-  }
+.personal-info input,
+select {
+  width: 210px;
+  padding: 4px;
+  border: 0;
+  border-radius: 1px;
+  background-color: var(--lightgrey);
+}
 
-  /* Questions section */
+.personal-info input {
+  margin-top: 5px;
+}
+
+/* About the placeholders */ 
+.personal-info input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+}
+
+.personal-info input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+}
+
+.personal-info input::-ms-input-placeholder {
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+}
+
+
+/*---------------------------------------*/  
+/*------------ SECOND SECTION -----------*/
+/*---------------------------------------*/
   
   fieldset {
     padding-block: 15px;
@@ -130,6 +149,7 @@ body {
     padding-inline: 10px;
   }
 
+  /*Spaing between answers*/
   article {
     margin-bottom: 4px;
   }
@@ -138,20 +158,87 @@ body {
     vertical-align: top;
   }
 
+/*---------------------------------------*/  
+/*------------ THIRD SECTION ------------*/
+/*---------------------------------------*/
   
   /* Dropdown menu start */
 
-  .reach select {
-    display: block;
+select {
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 35px;
+}
+
+textarea {
+  width: 100%;
+}
+
+/* Submit */
+
+input[type="submit"] {
+  display: block;
+  margin: 60px auto 70px;
+  width: 150px;
+  height: 30px;
+}
+  
+  
+/*---------------------------------------*/  
+/*------------ RESPONSIVENESS -----------*/
+/*---------------------------------------*/
+
+
+
+@media (max-width: 800px) {
+
+  section.role-skill {
+  width: 85%;
+}
+}
+
+@media (max-width: 700px) {
+  
+  body {
+    overflow-x: hidden;
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  .form {
+    min-width: 250px;
+    width: 95%;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+  
+  .personal-info label {
+    display: flex;
+    justify-content: space-between;
     margin-inline: auto;
-    margin-bottom: 35px;
+    width: 85%;
+    text-align: center;
   }
   
-  /* Submit */
-  
-  input[type="submit"] {
-    display: block;
-    margin: 80px auto 70px;
-    width: 150px;
-    height: 30px;
+  .personal-info p {
+    display: inline;
   }
+
+
+  .personal-info input {
+    width: 50%;
+    margin-block: 5px;
+  }
+  
+  fieldset {
+    width: 95%;
+  }
+
+  section:last-of-type {
+    width: 85%;
+  }
+}
