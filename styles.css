@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(http://www.myconfinedspace.com/wp-content/uploads/2018/12/Falling-Astronaut.jpg);
+  background-image: url("./images/space.jpg");
   background-position: center;
   background-size: cover;
   color: white;
@@ -64,7 +64,7 @@ h1 {
   margin-inline: auto;
   width: 80%;
   height: 2px;
-  background: linear-gradient(to right, rgb(70, 70, 70), white, rgb(70, 70, 70));
+  background: linear-gradient(to right, rgb(70, 70, 70), white, rgb(70, 70, 70) 100%);
   margin-block: 90px ;
 }
 
